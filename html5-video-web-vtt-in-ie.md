@@ -4,7 +4,7 @@ If you are a Front End Developer, you know how much we all love debugging IE bug
 
 ### Lets get started!
 
-Recently, I was trying to dynamically load a .vtt file, and enable custom CC controls on my video player, if the text tracks were available. I added an event listener to the track element, to listen to the successful loading of the text tracks. The code worked beautifully in all browsers but IE. I dug through the <track> element's documentation on MSDN for hours to find a weird difference in other browsers vs IE when it comes to the textTracks Object.
+Recently, I was trying to dynamically load a .vtt file, and enable custom *CC* controls on my video player, if the text tracks were available. I added an event listener to the track element, to listen to the successful loading of the text tracks. The code worked beautifully in all browsers but IE. I dug through the <track> element's documentation on MSDN for hours to find a weird difference in other browsers vs IE when it comes to the textTracks Object.
 
 I'm going to use the following video as an example.
 
@@ -14,7 +14,7 @@ I'm going to use the following video as an example.
 </video>
 ```
 
-First I'm going to create a track element and append it to the video. For simplicity I am not going to AJAX the .vtt file in this post. Here's what the code looks like:
+First I'm going to create a track element and append it to the video. For simplicity I am not going to AJAX the `.vtt` file in this post. Here's what the code looks like:
 
 ```javascript
 var videoEl = document.getElementById("demo");
@@ -30,7 +30,7 @@ tt.setAttribute('srclang', 'en');
 videoEl.appendChild(tt);
 ```
 
-Now if you have an event listener bound to the textTracks object that does something fancy it will not work in IE . 
+Now if you have an event listener bound to the `textTracks` object that does something fancy it will not work in *IE* . 
 
 ```javascript
 var ttObj = videoEl.textTracks;
