@@ -30,7 +30,7 @@ tt.setAttribute('srclang', 'en');
 videoEl.appendChild(tt);
 ```
 
-Now if you have an event listener bound to the `textTracks` object that does something fancy it will not work in *IE* . 
+Now if you have an event listener bound to the `textTracks` object that does something fancy it will not work in **IE** . 
 
 ```javascript
 var ttObj = videoEl.textTracks;
