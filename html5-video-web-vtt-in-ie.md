@@ -1,10 +1,10 @@
 ## Dynamic WebVTT for HTML5 Videos in Internet Explorer
 
-If you are a Front End Developer, you know how much we all love debugging IE bugs. I wanted to save you some time, and write this post in case you are trying to be fancy with the WebVTT.
+If you are a Front End Developer, you know how much we all love debugging **IE** bugs. I wanted to save you some time, and write this post in case you are trying to be fancy with the WebVTT.
 
 ### Lets get started!
 
-Recently, I was trying to dynamically load a .vtt file, and enable custom *CC* controls on my video player, if the text tracks were available. I added an event listener to the track element, to listen to the successful loading of the text tracks. The code worked beautifully in all browsers but IE. I dug through the <track> element's documentation on MSDN for hours to find a weird difference in other browsers vs IE when it comes to the textTracks Object.
+Recently, I was trying to dynamically load a .vtt file, and enable custom *CC* controls on my video player, if the text tracks were available. I added an event listener to the track element, to listen to the successful loading of the text tracks. The code worked beautifully in all browsers but IE. I dug through the `<track>` element's documentation on **MSDN** for hours to find a weird difference in other browsers vs **IE** when it comes to the `textTracks` Object.
 
 I'm going to use the following video as an example.
 
