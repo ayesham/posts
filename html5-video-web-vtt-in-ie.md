@@ -4,7 +4,7 @@ If you are a Front End Developer, you know how much we all love debugging **IE**
 
 ### Lets get started!
 
-Recently, I was trying to dynamically load a .vtt file, and enable custom *CC* controls on my video player, if the text tracks were available. I added an event listener to the track element, to listen to the successful loading of the text tracks. The code worked beautifully in all browsers but IE. I dug through the `<track>` element's documentation on **MSDN** for hours to find a weird difference in other browsers vs **IE** when it comes to the `textTracks` Object.
+Recently, I was trying to dynamically load a .vtt file, and enable custom *CC* controls on my video player, if the text tracks were available. I added an event listener to the track element, to listen to the successful loading of the text tracks. The code worked beautifully in all browsers but **IE**. I dug through the `<track>` element's documentation on **MSDN** for hours to find a weird difference in other browsers vs **IE** when it comes to the `textTracks` Object.
 
 I'm going to use the following video as an example.
 
@@ -39,7 +39,7 @@ ttObj.addEventListener('addtrack', function (evt) {
 });
 ```
 
-In IE the video will have both textTracks object and `audioTracks` object, the event listener will work when bound to the `audioTracks` object.
+In **IE** the video will have both `textTracks` object and `audioTracks` object, the event listener will work when bound to the `audioTracks` object.
 
 ```javascript
 var atObj = videoEl.audioTracks;
